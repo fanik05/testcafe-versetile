@@ -1,0 +1,16 @@
+{
+  "name": "testcafe-versetile",
+  "version": "1.0.0",
+  "description": "testcafe different feature practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome tests/",
+    "headless-test": "testcafe 'chrome:headless' tests/"
+  },
+  "keywords": [],
+  "author": "Fatin Noor Anik",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^1.8.6"
+  }
+}
