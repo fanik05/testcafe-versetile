@@ -1,18 +1,17 @@
 import { Selector } from 'testcafe';
 import { ClientFunction } from 'testcafe';
+const loginModel = require('../page_models/login');
 
 fixture `Club Swan Login Page`
     .meta('fixtureID', 'f-0001')
     .meta({author: 'Fatin', creationDate: '19/06/2020'})
     .page `https://member.dev.clubswan.com/`;
 
-const title = Selector('title');
-
 test
     .meta('testID', 't-0001')
     ('Check if the page title is correct', async t => {
         await t
-            .expect(title.innerText).eql('Club Swan');
+            .expect(loginModel.title.innerText).eql('Club Swan');
     });
 
 const getPageUrl = ClientFunction(() => window.location.href);
