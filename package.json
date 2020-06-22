@@ -11,6 +11,7 @@
   "author": "Fatin Noor Anik",
   "license": "ISC",
   "devDependencies": {
-    "testcafe": "^1.8.6"
+    "testcafe": "^1.8.6",
+    "testcafe-reporter-slack": "0.0.6"
   }
 }

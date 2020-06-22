@@ -184,5 +184,6 @@ test
     ('Check if something is typed on the email field then the send button is enabled', async t => {
         await t
             .typeText(resetModel.emailField, validEmail)
-            .expect(resetModel.sendEmailButton.hasAttribute('disabled')).notOk();
+            .expect(resetModel.sendEmailButton.hasAttribute('disabled')).notOk()
+            .wait(5000);
     });
