@@ -64,3 +64,27 @@ test
         await t
             .expect(localizeWidget.exists).ok();
     });
+
+test
+    .meta('testID', 't-0006')
+    ('Check if the default selected language is English', async t => {
+        await t
+            .expect(localizeWidget.innerText).eql('English');
+    })
+
+test
+    .meta('testID', 't-0007')
+    ('Check localize widget functions', async t => {
+        await t 
+            .maximizeWindow()
+            .hover(localizeWidget, {
+                offsetX: 20,
+                offsetY: 20,
+                speed: 0.5
+            })
+            .takeScreenshot({
+                path: 'screenshots/loginPage.png',
+                fullPage: true
+            })
+            .wait(20000);
+    });

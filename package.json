@@ -4,7 +4,7 @@
   "description": "testcafe different feature practice",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome tests/",
+    "test": "testcafe chrome tests/index.js --reporter slack",
     "headless-test": "testcafe 'chrome:headless' tests/"
   },
   "keywords": [],
