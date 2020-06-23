@@ -2,4 +2,3 @@ node_modules
 screenshots
 package-lock.json
 .env
-user_credentials
